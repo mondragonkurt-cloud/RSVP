@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding RSVP | Juan & Maria</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="overlay">
+
+            <p class="small-title">WE ARE GETTING MARRIED</p>
+
+            <h1>Juan & Maria</h1>
+
+            <p class="date">December 20, 2026</p>
+
+            <p class="location">
+                The Garden Events Place<br>
+                Manila, Philippines
+            </p>
+
+            <a href="#rsvp" class="button">
+                RSVP NOW
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- INVITATION -->
+    <section class="invitation">
+
+        <p class="small-title">TOGETHER WITH THEIR FAMILIES</p>
+
+        <h2>Juan Dela Cruz</h2>
+
+        <p class="and">&</p>
+
+        <h2>Maria Santos</h2>
+
+        <p class="message">
+            joyfully invite you to celebrate their wedding
+            as they begin their journey together.
+        </p>
+
+        <div class="details">
+
+            <div>
+                <h3>DATE</h3>
+                <p>December 20, 2026</p>
+            </div>
+
+            <div>
+                <h3>TIME</h3>
+                <p>4:00 PM</p>
+            </div>
+
+            <div>
+                <h3>VENUE</h3>
+                <p>The Garden Events Place</p>
+                <p>Manila, Philippines</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RSVP SECTION -->
+    <section id="rsvp" class="rsvp">
+
+        <p class="small-title">KINDLY RESPOND</p>
+
+        <h2>RSVP</h2>
+
+        <p>
+            Please confirm your attendance by filling out the form below.
+        </p>
+
+        <!--
+            IMPORTANT:
+            Replace the Google Forms URL below with your own
+            Google Form URL.
+        -->
+
+        <form
+            action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse"
+            method="POST"
+            target="_blank"
+        >
+
+            <label for="name">Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                name="entry.123456789"
+                placeholder="Your full name"
+                required
+            >
+
+
+            <label for="email">Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                name="entry.987654321"
+                placeholder="your@email.com"
+                required
+            >
+
+
+            <label for="guests">Number of Guests</label>
+
+            <select
+                id="guests"
+                name="entry.111111111"
+                required
+            >
+
+                <option value="">Select number of guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+
+            </select>
+
+
+            <label>Will you attend?</label>
+
+            <div class="radio-group">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="entry.222222222"
+                        value="Yes, I will attend"
+                        required
+                    >
+                    Yes, I'll be there!
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="entry.222222222"
+                        value="Sorry, I cannot attend"
+                    >
+                    Sorry, I can't attend
+                </label>
+
+            </div>
+
+
+            <label for="message">Message for the Couple</label>
+
+            <textarea
+                id="message"
+                name="entry.333333333"
+                placeholder="Leave a message..."
+                rows="4"
+            ></textarea>
+
+
+            <button type="submit">
+                SEND RSVP
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>Juan & Maria</h2>
+
+        <p>
+            December 20, 2026
+        </p>
+
+        <p>
+            #JuanAndMaria2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

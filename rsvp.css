@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #fffaf7;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.35),
+            rgba(0,0,0,0.35)
+        ),
+        url("wedding.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    padding: 40px 20px;
+}
+
+.small-title {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(60px, 10vw, 110px);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.location {
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 14px 35px;
+
+    color: white;
+    border: 1px solid white;
+
+    text-decoration: none;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    color: #333;
+}
+
+
+/* INVITATION */
+
+.invitation {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+.invitation h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.and {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.message {
+    max-width: 600px;
+    margin: 30px auto;
+
+    line-height: 1.8;
+}
+
+
+/* DETAILS */
+
+.details {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    margin-top: 60px;
+
+    flex-wrap: wrap;
+}
+
+.details h3 {
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 14px;
+}
+
+
+/* RSVP */
+
+.rsvp {
+    background: #f3ebe5;
+
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+.rsvp h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 55px;
+
+    margin-bottom: 20px;
+}
+
+.rsvp > p {
+    margin-bottom: 40px;
+}
+
+
+/* FORM */
+
+form {
+    max-width: 600px;
+
+    margin: auto;
+
+    text-align: left;
+}
+
+form label {
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    background: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* RADIO */
+
+.radio-group {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 5px;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+
+/* SUBMIT */
+
+button {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 16px;
+
+    border: none;
+
+    background: #333;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background: #222;
+
+    color: white;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-top: 8px;
+
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .invitation h2 {
+        font-size: 38px;
+    }
+
+    .details {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+}
